@@ -151,6 +151,8 @@ img{
     max-width: 1440px;
     background-position: center;
     background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .order-title{
@@ -208,9 +210,11 @@ img{
 }
 .our-service.list{
     display: flex;
-   flex-wrap:wrap;
-   margin: 0;
-   padding: 0;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
     margin-left: -24px;
 }
 .our-service .our-service-title{
@@ -222,12 +226,10 @@ img{
 }
 .service-list{
     width: calc((100% / 4) - 24px);
-    margin-left: 24px;
+    margin-left: 24px; 
 }
 
-.our-service-text{
-   width:  264px;
-}
+
 
 .our-service .paragraph{
     color: var(--primary-text-color);
@@ -235,6 +237,13 @@ img{
     font-size: 16px;
     line-height: 1.5;
 }
+
+.icon-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /* 3 sect What are we doing */
@@ -317,7 +326,7 @@ img{
 .team-soc-list {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 24px;
 }
 
 .team-soc-item {
@@ -333,6 +342,17 @@ img{
     align-items: center;
     justify-content: center;
 }
+
+.team-soc-link.link:hover,.team-soc-link.link:focus {
+background-color: #404BBF; 
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-soc-link.link:active{
+    background-color: #404BBF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 
 /* SECT 5  */
 /* CUSTOMERS */
@@ -357,19 +377,18 @@ img{
     justify-content: center;
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    height: 88px;
     }
 
    .customer-soc-icon{
-    width: 168px;
-    height: 88px;
     fill: #8E8F99;
-    padding: 16px 32px;
    }
                
-   .customer-soc-icon:hover,
    .customers-soc-link:hover
    {
     border-color: var(--primary-brend-color);
+   }
+   .customers-soc-link:hover .customer-soc-icon{
     fill: var(--primary-brend-color);
    }
 
@@ -419,7 +438,6 @@ display: flex;
 }
 
 .footer-soc-item{
-    width: calc((100% / 3) - 16px);
     width: 40px;
     height: 40px;
     margin-right: 16px;
@@ -501,9 +519,9 @@ display: flex;
     margin-top: 48px; 
 }
 
-.potfolio-title:hover,
-.potfolio-title:focus
-.potfolio-title:active{
+.potfolio-link:hover,
+.potfolio-link:focus
+.potfolio-link:active{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
